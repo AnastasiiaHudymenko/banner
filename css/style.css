@@ -1,0 +1,94 @@
+h2,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 12px 0;
+
+  background-color: rgba(40, 54, 147, 1);
+
+  background-image: url("../images/dot-mobile.png"),
+    url("../images/ellipse-mobile.png"), url("../images/plus-mobile.png"),
+    url("../images/wave-mobile.png");
+  background-position: top -17px right -20px, top 81px left 252px,
+    top 4px left 108px, 33px 60px, center;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: auto, auto, auto, auto;
+}
+
+.wrapper-img {
+  position: relative;
+  width: 107px;
+  height: 81px;
+}
+
+.wrapper-img__thumb-img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wrapper-img__thumb-img2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper-text__title {
+  font-size: 27px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 0.924px;
+
+  color: #ffc400;
+}
+
+.wrapper-text__desc {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.btn-buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 7px;
+  padding-bottom: 6px;
+  padding-left: 18px;
+  padding-right: 16px;
+
+  border: none;
+  border-radius: 12px;
+
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.btn-buy__text {
+  display: inline-block;
+  max-width: 36px;
+
+  color: #283693;
+
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  letter-spacing: 0.924px;
+}
