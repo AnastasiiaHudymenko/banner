@@ -3,42 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Підключення шрифта -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Підключення стилів -->
     <link rel="stylesheet" href="./css/style.css" />
+
     <title>Banner</title>
   </head>
   <body>
-    <div class="container">
-      <div class="wrapper-img">
-        <div class="wrapper-img__thumb-img1">
-          <img src="./images/poligon-mobile.png" alt="polygon" />
-        </div>
-        <div class="wrapper-img__thumb-img2">
-          <img src="./images/mobile.png" alt="sneakers" />
-        </div>
-      </div>
-      <div class="wrapper-animation">
-        <div class="wrapper-text">
-          <div class="text text1">
-            <h2 class="wrapper-text__title">Best Seller</h2>
-            <p class="wrapper-text__desc">New style</p>
+    <!-- container -->
+    <div class="container show">
+      <button class="btn-close" type="button" aria-label="button close">
+        <svg class="icon-close" width="14" height="14">
+          <use href="./images/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
+
+      <!-- bgr-wrapper -->
+      <div class="bgr-wrapper">
+        <div class="wrapper-img">
+          <div class="wrapper-img__thumb-img">
+            <img
+              class="img img-sneakers"
+              src="./images/img-banner.png"
+              alt="beige sneaker"
+            />
+            <img
+              class="img img-women"
+              src="./images/img-women-banner.png"
+              alt="girl with packages"
+            />
           </div>
-          <!-- <div class="text text2">
-            <h2 class="wrapper-text__title">Best Seller</h2>
-            <p class="wrapper-text__desc">New style</p>
-          </div> -->
         </div>
-      </div>
-      <div class="wrapper-btn">
-        <bitton class="btn-buy" type="button"
-          ><span class="btn-buy__text">Buy now</span></bitton
-        >
+
+        <!-- wrapper-animation -->
+        <div class="wrapper-animation">
+          <div class="wrapper-animation__text1">
+            <h2 class="wrapper-animation__title">Best Seller</h2>
+            <p class="wrapper-animation__desc">New style</p>
+          </div>
+          <div class="wrapper-animation__text2">
+            <h2 class="wrapper-animation__title">Super Sale</h2>
+            <p class="wrapper-animation__desc">New arrival</p>
+          </div>
+        </div>
+
+        <!-- wrapper-btn -->
+        <div class="wrapper-btn">
+          <button class="btn-buy btn-buy--animation" type="button">
+            <span class="btn-buy__text">Buy now</span>
+          </button>
+        </div>
       </div>
     </div>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>
