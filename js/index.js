@@ -10,11 +10,16 @@ const handleClickBtnClose = () => {
 
 const handleAnimatedBtn = () => {
   const animatedButton = document.querySelector(".btn-buy");
+  const img = document.querySelector(".img-women");
   function startAnimation() {
     animatedButton.classList.remove("btn-buy--animation");
     void animatedButton.offsetWidth;
     animatedButton.classList.add("btn-buy--animation");
   }
+
+  setTimeout(() => {
+    img.classList.remove("hidden");
+  }, 2000);
 
   startAnimation();
   intervalId = setInterval(startAnimation, 5000);
